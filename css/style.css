@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,600");
+
+body {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  background: url(https://images.pexels.com/photos/358358/pexels-photo-358358.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main .container {
+  padding: 35px 0 280px;
+}
+
+.main .caption h1 {
+  font-size: 30px;
+  color: #dfecdf;
+  margin-bottom: 130px;
+}
+
+.main #myCarousel {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #567;
+  border-radius: 2px;
+  position: relative;
+}
+
+.main #myCarousel ul {
+  width: 2000px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.main #myCarousel ul li {
+  width: 400px;
+  height: 300px;
+  float: left;
+  list-style: none;
+}
+
+.main #myCarousel .left-control,
+.main #myCarousel .right-control {
+  background: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 300px;
+  opacity: .4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.main #myCarousel .left-control:hover,
+.main #myCarousel .right-control:hover {
+  opacity: .9;
+}
+
+.main #myCarousel .left-control i,
+.main #myCarousel .right-control i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.main #myCarousel .left-control {
+  position: absolute;
+  left: 0;
+}
+
+.main #myCarousel .left-control i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+}
+
+.main #myCarousel .right-control {
+  position: absolute;
+  right: 0;
+}
+
+.main #myCarousel .right-control i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+}
+
+.main #myCarousel .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 10px 0;
+}
+
+.main #myCarousel .btn-circle i {
+  font-size: 22px;
+  color: #9b6b63;
+  font-weight: bold;
+}
+
+footer .container {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px 0 25px;
+  color: #fff;
+  line-height: 0;
+}
+
+@media (max-width: 768px) {
+  
+  .main .container {
+    padding: 5px 0 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .main .caption h1 {
+    font-size: 25px;
+    color: #dfecdf;
+    margin-bottom: 30px;
+  }
+
+  .main #myCarousel {
+    width: 95%;
+  }
+
+  footer .container {
+    font-size: 12px;
+  }
+}
