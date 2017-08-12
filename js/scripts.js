@@ -12,7 +12,7 @@ $(function() {
     }    
     
     function interval() {
-        interval = setInterval(changeSlide,5000);
+        interval = setInterval(changeSlide, 5000);
     }
     
     function stopInterval () {
@@ -30,14 +30,14 @@ $(function() {
     }
 
     function placeLastSlide() {
-		var firstItem = carouselList.find("li:first");
-		var lastItem = carouselList.find("li:last");
+		var firstItem = carouselList.find("li:first"),
+            lastItem = carouselList.find("li:last");
 		firstItem.before(lastItem);
-		carouselList.css({marginLeft:0});
+		carouselList.css({marginLeft:-400});
     }
     
     leftControl.click(function() {
-		carouselList.animate({'marginLeft': +400}, 500, placeLastSlide);
+		carouselList.animate({'marginLeft':0}, 500, placeLastSlide);
 	});
 	rightControl.click(function() {
 		carouselList.animate({'marginLeft':-400}, 500, placeFirstSlide);
